@@ -10,19 +10,19 @@ namespace Conditonal_Statements
     {
         static void Main(string[] args)
         {
-            //string s = "20";
-            //int a = Convert.ToInt32(s);
+            string s = "20";
+            int a = Convert.ToInt32(s);
             //if statement
             //type checking of indentifier/variable s 
-            //if( s.GetType() == typeof(string))
-            //{
-             // Console.WriteLine("The total length of the string s is : {0}",s.Length);
-            //}
-            //else {
-               // Console.WriteLine("Debanjan bobor");
-            //}
+            if( s.GetType() == typeof(string))
+            {
+             Console.WriteLine("The total length of the string s is : {0}",s.Length);
+            }
+            else {
+             Console.WriteLine("Debanjan bobor");
+            }
 
-            /*
+            
             Console.Write("Enter your age :");
             int age = Convert.ToInt32(Console.ReadLine());
             if (age < 0 || age > 110)
@@ -44,7 +44,7 @@ namespace Conditonal_Statements
             else
             {
                 Console.WriteLine("You are {0} years old enough for calculating your age.", age);
-            } */
+            }
 
             // Ternary Operator.
             
