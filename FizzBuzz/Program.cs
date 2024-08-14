@@ -12,21 +12,24 @@ namespace FizzBuzz
         {
             //Console.Write("Enter a number to Check : ");
             //int num = Convert.ToInt32(Console.ReadLine());
-
+            bool threeDiv = false;
+            bool fiveDiv = false;
             for (int num = 1; num <=15; num++)
             {
-                if( num < 0)
+                threeDiv = num % 3 == 0;
+                fiveDiv = num % 5 == 0;
+                if ( num < 0)
                 {
                     Console.WriteLine("Invalid");
-                }else if( num % 3 == 0 && num % 5 == 0)
+                }else if( threeDiv && fiveDiv )
                 {
                     Console.WriteLine("FizzBuzz");
                 }
-                else if(num % 3 == 0 && num % 5 != 0)
+                else if(threeDiv)
                 {
                     Console.WriteLine("Fizz");
                 }
-                else if (num % 5 == 0 && num % 3 != 0)
+                else if (fiveDiv)
                 {
                     Console.WriteLine("Buzz");
                 }
